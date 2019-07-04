@@ -10,9 +10,14 @@ import {
   NbAlertModule,
   NbButtonModule,
   NbCheckboxModule,
-  NbInputModule
+  NbInputModule,
+  NbIconModule,
+  NbDatepickerModule,
+  NbLayoutModule
 } from '@nebular/theme';
 import { NgxLoginComponent } from './login/ngx-login.component';
+import { NgxRegisterComponent } from './register/ngx-register.component';
+import { NbEvaIconsModule } from '@nebular/eva-icons';
 
 
 @NgModule({
@@ -25,10 +30,15 @@ import { NgxLoginComponent } from './login/ngx-login.component';
     NbButtonModule,
     NbCheckboxModule,
     NgxAuthRoutingModule,
+    NbEvaIconsModule,
+    NbIconModule,
+    NbDatepickerModule,
+    NbLayoutModule,
 
     NbAuthModule
   ],
   declarations: [
-    NgxLoginComponent],
+    NgxLoginComponent,
+    NgxRegisterComponent],
 })
 export class NgxAuthModule { }
